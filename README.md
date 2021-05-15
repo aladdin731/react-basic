@@ -74,6 +74,8 @@ props.xxx
 no state so React Hooks
 useState returns an array, and should be in the very top level of the function(can not be put in if statement or other...)
 
+rfc -> shortcur for function component
+
 
 export default function XX(props or destructure{var_name}){
     return (
