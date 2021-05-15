@@ -43,6 +43,49 @@ self closing tag or closing tag, can not just open tag, like input in HTML
 ## class component && functional component
 
 ### class component
+the component will be rerendered when state/prop changes
+only render this component and does not affect other components
+this.props
+
+export default class XX extends Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            // JS Object - key value pair
+        }
+    }
+    render(){
+        return(
+            <div>
+                // use {javascrip code} in html
+            </div>
+        )
+    }
+}
+
+#### this.setState
+this.setState({key: xxx}) is called in asynchronously 
+so in the counter app, it increment by 1 even we have 2 this.setState
+so we can use prevState!!!
+
+### function component + React Hooks(only used in function component)
+props.xxx
+no state so React Hooks
+useState returns an array, and should be in the very top level of the function(can not be put in if statement or other...)
+
+
+export default function XX(props or destructure{var_name}){
+    return (
+            <div>
+            </div>
+        )
+}
+
+#### React Hooks useContext 
+Context is designed to share data that can be considered “global” for a tree of React components, such as the current authenticated user, theme, or preferred language.
+ 
+
 
 
 
